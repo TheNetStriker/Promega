@@ -13,7 +13,7 @@ G28 Z ; Home z again
 
 M190 S60 ; wait for heat bed to get to 60c
 
-G1 Z200 ; move the bed to 200mm from the nozzle
+; G1 Z200 ; move the bed to 200mm from the nozzle
 
 G29 S2 ; Disable bed mesh
 G29 S2 ; Disable bed mesh
@@ -35,7 +35,7 @@ M291 R"SLOWLY MOVE THE BED UP" P"Touch the nozzle with the bed. Press OK when do
 G92 Z0 ; set the current Z position as 0
 G1 Z20 ; lower bed by 20mm
 
-M291 P"Deploy the Z Probe. Press OK when done." S2
+; M291 P"Deploy the Z Probe. Press OK when done." S2
 G30 S-1 ; this will measure the Z Probe Z offset from 0
 
 ;Beep 3 times
@@ -46,7 +46,7 @@ G4 P401
 M300 S600 P250
 G4 P401
 
-M291 R"(IF NEEDED)" P"Retract the Z Probe. Press OK to continue." S2
+; M291 R"(IF NEEDED)" P"Retract the Z Probe. Press OK to continue." S2
 
 M291 R"AFTER THE PROMPT" P"Record Z value displayed in Machine Status Table." S2
 G4 S4; dwell for 4 seconds

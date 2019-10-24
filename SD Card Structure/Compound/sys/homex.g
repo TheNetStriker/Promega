@@ -34,7 +34,8 @@ G0 Y-6 F1500
 G0 Y10 F120 S1
 
 ; Set this location as Y = 384mm
-G92 Y384
+; G92 Y384
+G92 Y305
 
 ; Move the gantry slightly away from back of printer, to allow travel past the bolt mounting the gantry bracket
 G0 Y-5 F1200
@@ -51,7 +52,8 @@ G0 X-6 F1500
 G0 X10 F120 S1
 
 ; Set this location as X = 380mm
-G92 X380
+; G92 X380
+G92 X369
 
 ; Move away from the limit switch, to prevent damage to it upon next move
 G0 X-5 F1500

@@ -4,6 +4,8 @@
 
 ; ============= PRE-HOMING =====================
 
+; M98 Phomex.g
+
 ; Ignore Machine boundaries
 M564 H0 S0
 
@@ -23,22 +25,28 @@ G1 Z10 F750 S1
 
 ; ============ HOME Z ==============
 
+G90 ; back to absolute mode
+
+G1 X200 Y200 F2000 ; put head over the centre of the bed, or wherever you want to probe
+
+G30 ; lower head, stop when probe triggered and set Z to trigger height
+
 ; Rapid Z until limit switch triggers
-G0 Z450 F1500 S1
+; G0 Z450 F1500 S1
 
 ; Back off to release limit switch
-G0 Z-15 F1500
+; G0 Z-15 F1500
 
 ; Slow advance to trigger limit switch
-G0 Z20 F120 S1
+; G0 Z20 F120 S1
 
-M98 Pmachine_zendstop.g ; Set Z Endstop height
+; M98 Pmachine_zendstop.g ; Set Z Endstop height
 M98 Pmachine_zprobe.g   ; Set Z Probe distance
 
 ; ============ Post-Homing ==============
 
 ; Revert to absolute coordinates
-G90
+; G90
 
 ; Re-enable mesh leveling
 G29 S1

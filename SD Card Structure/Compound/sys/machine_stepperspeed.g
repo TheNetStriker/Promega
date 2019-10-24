@@ -8,6 +8,9 @@
 ; abrupt direction changes.
 ; These are advanced feature values and should only be changed for good reason and if you know how they impact prints.
 
-M201 X3000 Y3000 Z75 E150 ; Set accelerations (mm/s^2)
-M203 X9000 Y9000 Z2300 E5000 ; Set maximum linear speeds
-M566 X350 Y350 Z50 E60 ; Set maximum instantaneous speed changes/jerk (mm/min)
+;M201 X3000 Y3000 Z75 E150 ; Set accelerations (mm/s^2)
+;M203 X9000 Y9000 Z2300 E5000 ; Set maximum linear speeds
+;M566 X350 Y350 Z50 E60 ; Set maximum instantaneous speed changes/jerk (mm/min)
+M201 X3000 Y3000 Z75 U75 V75 E150 ; Set accelerations (mm/s^2)
+M203 X9000 Y9000 Z400 U400 V400 E5000 ; Set maximum linear speeds
+M566 X350 Y350 Z30 U30 V30 E60 ; Set maximum instantaneous speed changes/jerk (mm/min)

@@ -10,6 +10,8 @@
 
 M350 X16 Y16 Z16		       ; Confirming default 1/16 microstepping mode for calculation, in case firmware default changes
 
-M92 X79.8 Y79.8 Z282.6961  ; Set axis steps/mm
+;M92 X79.8 Y79.8 Z282.6961  ; Set axis steps/mm
+M92 X80 Y80 Z1600 U1600 V1600  ; Set axis steps/mm
 
-M350 X32 Y32 Z32           ; Setting microstepping to 1/32.
+;M350 X32 Y32 Z32           ; Setting microstepping to 1/32.
+M350 X32 Y32 Z32 U32 V32 I1 ; Setting microstepping to 1/32.
