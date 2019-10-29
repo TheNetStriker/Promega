@@ -34,4 +34,4 @@
 ; G31 P450 X30.4 Y30.7 Z10 ; Set Z probe (IR) trigger value and offset
 ; G31 P999 X-42 Y31 Z15.0  ; Set Z probe (Metrol switch) trigger value, offset
 ; G31 P999 X-43 Y25 Z3.9   ; Set Z probe (limit switch) trigger value, offset
-G31 X-44 Y28 Z2.3 P25 ; BLTouch
+G31 X30 Y1 Z2.4 P25 ; BLTouch

@@ -4,7 +4,7 @@
 
 ; ============= PRE-HOMING =====================
 
-; M98 Phomex.g
+M98 Phomex.g
 
 ; Ignore Machine boundaries
 M564 H0 S0
@@ -27,9 +27,15 @@ G1 Z10 F750 S1
 
 G90 ; back to absolute mode
 
-G1 X200 Y200 F2000 ; put head over the centre of the bed, or wherever you want to probe
+G1 X200 Y150 F2000 ; put head over the centre of the bed, or wherever you want to probe
 
 G30 ; lower head, stop when probe triggered and set Z to trigger height
+
+M203 Z100 ; Set maximum linear speed of z to 100
+
+G30 ; Probe again at lower speed
+
+M203 Z400 ; Set maximum linear speeds back to 400
 
 ; Rapid Z until limit switch triggers
 ; G0 Z450 F1500 S1

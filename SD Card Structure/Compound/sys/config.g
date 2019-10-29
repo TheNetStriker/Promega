@@ -27,7 +27,7 @@ M569 P0 S0 D3 V0							; Drive 0 goes forwards, CoreXY_1, stealth chop, disable 
 M569 P1 S1 D3 V0							; Drive 1 goes forwards, CoreXY_2, stealth chop, disable spread cycle
 M569 P2 S1 D3 V0							; Drive 2 goes forwards, Z Motor, stealth chop, disable spread cycle
 M569 P3 S0 D3 V800							; Drive 3 goes forwards, Left Extruder, stealth chop, spread cycle only on retractions (basically)
-M569 P4 S1 D3 V800							; Drive 4 goes forwards, Right Extruder, stealth chop, spread cycle only on retractions (basically)
+; M569 P4 S1 D3 V800							; Drive 4 goes forwards, Right Extruder, stealth chop, spread cycle only on retractions (basically)
 M569 P5 S1 D3 V0                                                        ; Drive 5 goes forward, Z Motor 2, stealth chop, disable spread cycle
 M569 P6 S1 D3 V0                                                        ; Drive 6 goes forward, Z Motor 3, stealth chop, disable spread cycle
 M584 X0 Y1 Z2:5:6 U5 V6 E3:4                                            ; three Z motors connected to driver outputs 2, 5 and 6
@@ -54,7 +54,7 @@ M570 H1 P15 T30								; Allow heater to be off by as much as 30C for 15 seconds
 ; M570 H2 P15 T30								; Allow heater to be off by as much as 30C for 15 seconds
 M305 P0 T100000 B4138 C0 R2200				; Set thermistor + ADC parameters for heater 0, For heated Bed thermistor
 M305 P1 X501 R2200							; Define left side extruder PT1000 
-M305 P2 X502 R2150							; Define right side extruder PT1000 
+; M305 P2 X502 R2150							; Define right side extruder PT1000 
 M307 H0 A78.9 C265.2 D9.5 S1.00 V24.0 B0	; Forcing heated bed PID control after power-cycle. Basic bed heating auto-tune
 ; M307 H2 A241.4 C104.5 D3.5 S1.00 V23.9 B0	; Set PID values use M303 auto-tune calibration settings
 M302 P1										; Allow Cold extrudes

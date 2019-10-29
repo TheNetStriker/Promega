@@ -6,7 +6,7 @@
 
 ; ============ HOME X & HOME Y ==============
 
-M98 Phomex.g ; Run the homex.g file, also homes the Y axis
+; M98 Phomex.g ; Run the homex.g file, also homes the Y axis
 
 ; ============ HOME Z ==============
 
