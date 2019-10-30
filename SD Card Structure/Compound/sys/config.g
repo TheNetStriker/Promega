@@ -50,7 +50,8 @@ M84 S1									; Set idle timeout
 ; H2 is right heater
 
 M570 H0 P25 T30								; Allow heater to be off by as much as 30C for 25 seconds
-M570 H1 P15 T30								; Allow heater to be off by as much as 30C for 15 seconds
+; M570 H1 P1 T30								; Allow heater to be off by as much as 30C for 15 seconds
+M570 H1 P5 T15								; Allow heater to be off by as much as 15C for 5 seconds
 ; M570 H2 P15 T30								; Allow heater to be off by as much as 30C for 15 seconds
 M305 P0 T100000 B4138 C0 R2200				; Set thermistor + ADC parameters for heater 0, For heated Bed thermistor
 M305 P1 X501 R2200							; Define left side extruder PT1000 
@@ -84,5 +85,7 @@ M586 P2 S0									; Disable Telnet
 
 ; --- SECTION: MISCELLANEOUS --- 
 
-M572 D0:1 S0.07								; Extruder Pressure Advance
+M572 D0:1 S0.05								; Extruder Pressure Advance
 ;M98 Pqc.g									; Do NOT uncomment unless you really know what you're doing
+
+M501 ; load config-override.g

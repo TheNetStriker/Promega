@@ -6,4 +6,4 @@
 ; Increasing stepper motor currents beyond their limit can result in damage to them!
 
 ;M906 X680 Y680 Z600 E400 I60; Set motor currents (mA) and idle current percentage
-M906 X680 Y680 Z1000 U1000 V1000 E1000 I60; Set motor currents (mA) and idle current percentage
+M906 X680 Y680 Z800 U800 V800 E800 I60; Set motor currents (mA) and idle current percentage

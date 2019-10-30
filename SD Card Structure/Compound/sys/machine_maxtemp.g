@@ -8,4 +8,4 @@
 
 M143 H0 S120 ; Set maximum bed temperature to 120 C
 M143 H1 S280 ; Set maximum heater temperature to 280C for hot end 1
-M143 H2 S280 ; Set maximum heater temperature to 280C for hot end 2
+; M143 H2 S280 ; Set maximum heater temperature to 280C for hot end 2
